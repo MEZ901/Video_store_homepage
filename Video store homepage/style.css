@@ -1,18 +1,26 @@
-ul{
+.navigation, ul{
     display: flex;
     list-style: none;
-    margin-left: 120px;
-    margin-top: -90px;
+    align-items: center;
 }
-a{
-    margin-left: 20px;
+.navication, li{
+    font-family: fantasy;
+    margin: 20px;
+}
+.navivation, a{
     text-decoration: none;
     color: black;
-    font-family: fantasy;
 }
-img{
-    width: 150px;
-    height: 150px;
-    margin: 0px 20px;
+.logo{
+    margin: 10px 20px;
 }
-
+.breadcrumbs a{
+    font-family: serif;
+}
+.breadcrumbs{
+    margin: -2pc;
+}
+.breadcrumbs li+li::before{
+    font-family: serif;
+    content:"/\00a0\00a0\00a0";
+}
