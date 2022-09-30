@@ -1,13 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+body{overflow: hidden;}
+
 .navigation, ul{
     display: flex;
     list-style: none;
     align-items: center;
 }
-.navication, li{
+.navigation ul li a{
     font-family: fantasy;
-    margin: 20px;
+    text-decoration: none;
+    margin: 30px;
+    color: black;
 }
-.navivation, a{
+.breadcrumbs ul li  a{
     text-decoration: none;
     color: black;
 }
@@ -18,9 +25,43 @@
     font-family: serif;
 }
 .breadcrumbs{
-    margin: -2pc;
+    margin: 0px;
 }
-.breadcrumbs li+li::before{
-    font-family: serif;
-    content:"/\00a0\00a0\00a0";
+.breadcrumbs ul li{
+    margin-right: 20px;
+}
+section h1{
+    font-family: fantasy;
+    margin-top: 50px;
+}
+section{
+    margin-left: 20px;
+}
+section .product {
+    display: flex;
+}
+section .product .pro1{
+    width: 260px;
+    height: 320px;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+section .product .pro1 img{
+    margin: 5px;
+    width: 250px;
+}
+section .product .pro1 h3{
+    margin: 5px;
+}
+section .product .pro1 p{
+    margin-left: 5px;
+}
+section .product .pro1 p:first-of-type{
+    color: grey;
+}
+section .product .pro1 p span{
+    text-decoration: underline;
+}
+section .product .pro1 p:last-of-type{
+    color: green;
 }
